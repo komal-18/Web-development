@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+<title>HTML Form</title>
+<style type="text/css">
+<!--
+	#coltext{color:darkslategray}
+     p{font:italic bold 16pt arial;}
+     h1{color :darkslategray;}
+     body{margin-left:200px;color:black;font-size:25px;background-color:lightcyan;left-margin:100px;"}
+  -->
+</style>
+<script type="text/javascript">
+function validation()  //function will give a blueprint of your version.
+ {
+		var t=document.getElementById("name").value;
+		var y=document.getElementById("email").value;
+		var z=document.getElementById("password").value;
+	if(t.length==0)
+{	
+	document.getElementById("para").formhtml=Please type something!!
+}
+else
+	{
+		document.getElementById("para").formhtml=t; 
+	}
+	if(y.length==0)
+{	
+	document.getElementById("para").formhtml=Please type something!!
+}
+else
+	{
+		document.getElementById("para").formhtml=y; 
+	}
+	if(z.length==0)
+{	
+	document.getElementById("para").formhtml=Please type something!!
+}
+else
+	{
+		document.getElementById("para").formhtml=z; 
+	}
+
+
+}
+</script>
+</head>
+<body>
+<!--A basic Form-->
+<form>
+
+<h1 id="coltext" style="font-size:50px;margin-left:320px;" ><u>A Form to know more about you</u></h1>
+<a href="https://www.linkedin.com/in/komal-gupta-7021381b2" style="float:right;">Contact me on:Linkedin</a><br><br>
+<img src="https://tse3.mm.bing.net/th?id=OIP.X9lg0Ur5ZLwViFJrzrOxSgHaE7&pid=Api&P=0&w=244&h=163" width="55%" height="30%" style="float:right;">
+
+<label for="name">Name:</label><br>
+<input type="text" name="Name"  id="name"><br>
+<label for="address" >Address:</label><br>
+<input type=text" name="Address" ><br>
+<label for="Email id">User Email Id:</label<br>
+<br>
+<input type="email" name="Email Id" id="email"><br>
+<labe for ="password">User password:</label><br>
+<input type="password" name="password" id="password"><br>
+
+<p id="para" style="color:yellow;"></p><br>
+     <h1 >Your BirthDate</h1>
+Birthday:
+	<input type="date" name="birthday"><br>
+<h1 id="coltext">Your hobbies</h1>
+<input type="checkbox" name="activity" value="Reading">Reading<br>
+<input type="checkbox" name="activity" value="Singing">Singing<br>
+<input type="checkbox" name="activity" value="Designing">Designing<br>
+<input type="checkbox" name="activity" value="Coding">Coding<BR>
+<input type="checkbox" name="activity" value="None of the above">None of the above<br>
+
+<h1>Preferred Mode of Travel</h1>
+<select id="travel">
+<option value="Bike" name="travel">Bike</option>
+<option value="Bicycle" name="travel">Bicycle</option>
+<option value="Car" name="travel">Car</option>
+<option value="Train" name="travel">Train</option>
+
+</select>
+
+<h1> Your Favorite Color</h1>
+<label for="favcolor">Select your favourite color:</label><br>
+	<input type="color" name="favcolor"><br>
+
+<h1 id="coltext">Your Favorite Food</h1>
+
+<input type="checkbox" name="food" value="Masala Dosa" checked>Masala Dosa<br>
+<input type="checkbox" name="food" value="Pazzta">Pazzta<br>
+<input type="checkbox" name="food" value="Sandwich">Sandwich<br>
+<input type="checkbox" name="food" value="Maggi">Maggi<br>
+<input type="checkbox" name="food" value="GolGappe">Golgappe<br>
+
+<h1>Wanted to become</h1>
+<a href="https://r.search.yahoo.com/_ylt=AwrxgzO7HvBfjXAArg_nHgx.;_ylu=Y29sbwMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1609600828/RO=10/RU=https%3a%2f%2fen.wikipedia.org%2fwiki%2fEngineer/RK=2/RS=7J14J4ecz2eReWGHJ7TJdsYzFOg-">Engineer</a><img src="http://www.newrecruitment.eu/wp-content/uploads/2013/09/rabota-oae-engineers.jpg" height="20%" width="20%" align="middle" ><br><br>
+
+<a href ="https://r.search.yahoo.com/_ylt=AwrwXxT9H_Bfh0UALUnnHgx.;_ylu=Y29sbwMEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1609601150/RO=10/RU=https%3a%2f%2fen.wikipedia.org%2fwiki%2fDoctor/RK=2/RS=2ebSL92TBEfkh4tMJFmvHbvsaMw-">Doctor</a>
+<img src="https://tse4.mm.bing.net/th?id=OIP.4K20x4GCppkO9k4ekNPSZwHaE8&pid=Api&P=0&w=230&h=154" align="middle"><br><br>
+
+<a href="https://r.search.yahoo.com/_ylt=AwrxhSQzIPBfWDUAhC7nHgx.;_ylu=Y29sbwMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1609601203/RO=10/RU=https%3a%2f%2fen.wikipedia.org%2fwiki%2fLawyer/RK=2/RS=B7PWao5dx5m8rznRrRdo.hfbGpM-">Lawyer</a>
+<img src="https://tse2.mm.bing.net/th?id=OIP.ARBs8sGxi1e7dPa6MjCSLgHaEJ&pid=Api&P=0&w=286&h=161" align="middle"><br><br>
+<a href="https://r.search.yahoo.com/_ylt=AwrxhSSrIPBfeCsAxgrnHgx.;_ylu=Y29sbwMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1609601324/RO=10/RU=https%3a%2f%2fen.wikipedia.org%2fwiki%2fArtist/RK=2/RS=WHs64xlhQPwaF8D9QlZ4CqFQwv4-">Artist</a>
+<img src="https://tse2.mm.bing.net/th?id=OIP.-vUe0b8nGcgia8IMwdJGqgHaG_&pid=Api&P=0&w=163&h=155" align="middle"><br>
+
+<h1>Most preferred</h1>
+<input type="radio" name="skills" value=" Work from home"> Work from <I><B>Home</B></I><br>
+<input type="radio" name="skills" value=" Work from office">Work from <I><B>Office</B></I><br>
+<input type="radio" name="skills" value=" Any of the above">Any of the above<br>
+
+<h1 id="coltext">Salary Expected</h1>
+<input type="radio" name="salary" value=" Less tahn 50k">Less than 50k<br>
+<input type="radio" name="salary" value=" Between50 to 60k">Between50 to 60k<br>
+<input type="radio" name="salary" value="Between 60 to 70k">Between60 to 70k<br>
+<input type="radio" name="salary" value="Between 70 to 80k">More than 70 k<br>
+
+<h1>Lucky number</h1>
+	Number between 1 and 10
+<input type="number" name="quantity" min="1" max="10"><br>
+<br>
+<button onclick="validation();">SUBMIT</button>
+</form>
+</body>
+</html>
